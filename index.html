@@ -3,83 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Faro</title>
+    <title>El Faro - Inicio</title>
     <link rel="icon" type="image/png" href="img/logo.png">
     <link rel="stylesheet" href="Estilos.css">
 </head>
 <body>
 
-<header>
-    <div class="contenedor-header">
-        <div class="logo-titulo">
-            <img src="Recursos/Logo.png" alt="Logo de El Faro" class="logo-faro">
-            <div>
-                <h1>El Faro</h1>
-                <p>Noticias, deporte y negocios en un solo lugar</p>
+    <header>
+        <div class="contenedor-header">
+            <div class="logo-titulo">
+                <img src="Recursos/Logo.png" alt="Logo de El Faro" class="logo-faro">
+                <div>
+                    <h1>El Faro</h1>
+                    <p>Noticias, deporte y negocios en un solo lugar</p>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="deporte.html">Deporte</a></li>
-        <li><a href="negocios.html">Negocios</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="deporte.html">Deporte</a></li>
+            <li><a href="negocios.html">Negocios</a></li>
+        </ul>
+    </nav>
 
-<main>
-    <section>
-        <h2>Noticias Generales de Chile</h2>
+    <main>
+        <section>
+            <h2>Noticias Generales de Chile</h2>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Título</th>
-                    <th>Categoría</th>
-                    <th>Descripción</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Fuerte alza en combustibles impacta a conductores y transporte</td>
-                    <img src="Recursos/Bencina.png" alt="Alza de la bencina" width="250">
-                    <td>Economía</td>
-                    <td>Esta semana se concretó un alza de hasta $370 por litro en las bencinas y de hasta $580 en el diésel, mientras el Gobierno reconoció dificultades técnicas para subsidiar el transporte público en regiones.</td>
-                </tr>
-                <tr>
-                    <td>Gremios educacionales alertan por violencia escolar tras ataque en Calama</td>
-                    <td>Actualidad</td>
-                    <td>Organizaciones de profesores y asistentes de la educación pidieron medidas urgentes luego del ataque ocurrido en un liceo de Calama, señalando que la violencia es uno de los principales problemas del sistema escolar.</td>
-                </tr>
-                <tr>
-                    <td>Debate político por honorarios y estructura de asesores del nuevo gobierno</td>
-                    <td>Política</td>
-                    <td>En medio del cambio de administración, se instaló la discusión sobre las remuneraciones de asesores, tema que según reportes está regulado por un sistema fijado por comisión y respaldado por ley.</td>
-                </tr>
-            </tbody>
-        </table>
+            <article>
+                <h3>Fuerte alza en combustibles impacta a conductores y transporte</h3>
+                <img src="Recursos/Bencina.png" alt="Alza de la bencina" width="250">
+                <p><strong>Categoría:</strong> Economía</p>
+                <p>Esta semana se concretó un alza de hasta $370 por litro en las bencinas y de hasta $580 en el diésel, mientras el Gobierno reconoció dificultades técnicas para subsidiar el transporte público en regiones.</p>
+            </article>
 
-        <div class="multimedia">
-            <h3>Video destacado</h3>
-            <video controls>
-                <source src="Recursos/Video.mp4" type="video/mp4">
-                Tu navegador no soporta videos.
-            </video>
+            <article>
+                <h3>Gremios educacionales alertan por violencia escolar tras ataque en Calama</h3>
+                <p><strong>Categoría:</strong> Actualidad</p>
+                <p>Organizaciones de profesores y asistentes de la educación pidieron medidas urgentes luego del ataque ocurrido en un liceo de Calama, señalando que la violencia es uno de los principales problemas del sistema escolar.</p>
+            </article>
 
-            <h3>Audio Creativo</h3>
-            <audio controls>
-                <source src="Recursos/Musica.mp4" type="audio/mpeg">
-                Tu navegador no soporta audio.
-            </audio>
-        </div>
-    </section>
-</main>
+            <article>
+                <h3>Debate político por honorarios y estructura de asesores del nuevo gobierno</h3>
+                <p><strong>Categoría:</strong> Política</p>
+                <p>En medio del cambio de administración, se instaló la discusión sobre las remuneraciones de asesores, tema que según reportes está regulado por un sistema fijado por comisión y respaldado por ley.</p>
+            </article>
+        </section>
 
-<footer>
-    <p>&copy; 2026 Periódico El Faro - Todos los derechos reservados</p>
-</footer>
+        <section class="multimedia">
+            <h3>Contenido Multimedia</h3>
+            
+            <div class="video-item">
+                <h4>Video destacado</h4>
+                <video controls width="100%">
+                    <source src="Recursos/Video.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+
+            <div class="audio-item">
+                <h4>Audio Creativo</h4>
+                <audio controls>
+                    <source src="Recursos/Musica.mp4" type="audio/mpeg">
+                    Tu navegador no soporta audio.
+                </audio>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Periódico El Faro - Todos los derechos reservados</p>
+    </footer>
 
 </body>
 </html>
