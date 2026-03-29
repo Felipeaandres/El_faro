@@ -163,27 +163,27 @@ footer {
     margin-top: 20px;
 }
 
-/* 1. Haz que las imágenes nunca sean más grandes que la pantalla */
+/* imagen no son mas grande que la pantalla */
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-/* 2. Asegúrate de que los contenedores usen un ancho flexible */
+/*contenedor*/
 .contenedor-header, main, section, article {
-    width: 90%;          /* Ocupa el 90% del ancho del celular */
-    max-width: 1000px;    /* Pero nunca más de 1000px en PC */
-    margin: 0 auto;      /* Céntralo */
-    box-sizing: border-box; /* Evita que el padding empuje el borde hacia afuera */
+    width: 90%;         
+    max-width: 1000px;    
+    margin: 0 auto;      
+    box-sizing: border-box; 
 }
 
-/* 3. Si usas fondos negros con bordes */
+/* bordes */
 article {
     background-color: black;
     color: white;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 8px;
-    word-wrap: break-word; /* Esto obliga a las letras a quedarse adentro */
+    word-wrap: break-word;
 }
