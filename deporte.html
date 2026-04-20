@@ -3,60 +3,291 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deporte El Faro</title>
-    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>El Faro - Deporte</title>
+    <link rel="icon" type="image/png" href="Recursos/Logo.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS propio -->
     <link rel="stylesheet" href="Estilos.css">
 </head>
 <body>
 
-    <header>
-        <div class="contenedor-header">
-            <div class="logo-titulo">
-                <img src="Recursos/Logo.png" alt="Logo de El Faro" class="logo-faro">
-                <div>
-                    <h1>El Faro</h1>
-                    <p>Noticias, deporte y negocios en un solo lugar</p>
+    <!-- Barra superior -->
+    <div class="top-bar text-center py-2">
+        Sección deportiva: resultados, análisis, figuras destacadas y actualidad del deporte chileno.
+    </div>
+
+    <!-- Header -->
+    <header class="site-header py-4">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="Recursos/Logo.png" alt="Logo de El Faro" class="logo-faro">
+                    <div>
+                        <h1 class="mb-1">El Faro</h1>
+                        <p class="mb-0">Noticias de Chile y el mundo en un solo lugar</p>
+                    </div>
+                </div>
+                <div class="mt-3 mt-md-0">
+                    <span class="badge bg-warning text-dark fs-6">Sección Deporte</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="deporte.html">Deporte</a></li>
-            <li><a href="negocios.html">Negocios</a></li>
-        </ul>
+    <!-- Menú principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark main-nav sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">El Faro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuDeporte" aria-label="Abrir menú principal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuDeporte">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="politica.html">Política</a></li>
+                    <li class="nav-item"><a class="nav-link" href="economia.html">Economía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tecnologia.html">Tecnología</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cultura.html">Cultura</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="deporte.html">Deporte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="negocios.html">Negocios</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <main>
-        <section>
-            <h2>Noticias Deportivas</h2>
+    <!-- Accesos rápidos -->
+    <section class="quick-access py-3">
+        <div class="container">
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <a href="index.html" class="btn btn-outline-light btn-sm">Portada</a>
+                <a href="deporte.html" class="btn btn-outline-light btn-sm">Fútbol</a>
+                <a href="deporte.html" class="btn btn-outline-light btn-sm">Selección Chilena</a>
+                <a href="deporte.html" class="btn btn-outline-light btn-sm">Atletismo</a>
+                <a href="deporte.html" class="btn btn-outline-light btn-sm">Agenda Deportiva</a>
+            </div>
+        </div>
+    </section>
 
-            <article>
-                <h3>Chile venció 4-2 a Cabo Verde en amistoso internacional</h3>
-                <img src="Recursos/chile.png" alt="Selección Chilena" width="250">
-                <p><strong>Disciplina:</strong> Fútbol</p>
-                <p>La selección chilena reaccionó en el segundo tiempo y derrotó a Cabo Verde por 4-2 en un nuevo amistoso, aprovechando mejor sus oportunidades ofensivas.</p>
-            </article>
+    <main class="container my-4">
 
-            <article>
-                <h3>La Roja mostró mejoría ofensiva en el complemento</h3>
-                <p><strong>Disciplina:</strong> Fútbol</p>
-                <p>El equipo dirigido por Nicolás Córdova elevó su nivel en la segunda parte del encuentro, dejando señales positivas en ataque y generación de juego.</p>
-            </article>
+        <!-- Noticia principal -->
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-lg main-news-card h-100">
+                    <img src="Recursos/la-roja.jpg" class="card-img-top" alt="Selección chilena en amistoso internacional">
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2">Noticia destacada</span>
+                        <h2 class="card-title">Chile mostró una mejor versión ofensiva tras su último amistoso internacional</h2>
+                        <p class="text-muted mb-2">Categoría: Selección Chilena</p>
+                        <p class="card-text">
+                            La Roja dejó señales positivas en ataque luego de una presentación que permitió observar
+                            nuevos nombres, variantes tácticas y una mayor intensidad en el segundo tiempo.
+                        </p>
+                        <a href="noticia-la-roja.html" class="btn btn-warning fw-semibold">Leer más</a>
+                    </div>
+                </div>
+            </div>
 
-            <article>
-                <h3>Agenda deportiva nacional sigue marcada por amistosos y análisis del recambio</h3>
-                <p><strong>Disciplina:</strong> Actualidad deportiva</p>
-                <p>Tras el triunfo, los medios deportivos chilenos centraron el debate en el rendimiento de la selección y en las opciones de nuevos nombres para futuros desafíos internacionales.</p>
-            </article>
+            <div class="col-lg-4">
+                <div class="card news-small-card shadow-sm mb-3">
+                    <img src="Recursos/clubes-chilenos.jpg" class="card-img-top" alt="Clubes chilenos en semana decisiva">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Fútbol nacional</span>
+                        <h5 class="card-title">Clubes chilenos enfrentan una semana decisiva entre torneo local y competencias internacionales</h5>
+                        <p class="card-text">
+                            Los equipos afinan sus planteles y estrategias en una etapa clave de la temporada.
+                        </p>
+                        <a href="noticia-clubes-chilenos.html" class="btn btn-outline-primary btn-sm">Leer más</a>
+                    </div>
+                </div>
+
+                <div class="card news-small-card shadow-sm mb-3">
+                    <img src="Recursos/atletismo-escolar.jpg" class="card-img-top" alt="Jóvenes promesas del atletismo escolar">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Atletismo</span>
+                        <h5 class="card-title">Nuevas promesas del atletismo escolar comienzan a destacar en competencias regionales</h5>
+                        <p class="card-text">
+                            Entrenadores valoran el crecimiento del semillero deportivo y el interés de jóvenes talentos.
+                        </p>
+                        <a href="noticia-atletismo-escolar.html" class="btn btn-outline-success btn-sm">Leer más</a>
+                    </div>
+                </div>
+
+                <div class="card news-small-card shadow-sm">
+                    <img src="Recursos/agenda-deportiva.jpg" class="card-img-top" alt="Agenda deportiva nacional">
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Agenda</span>
+                        <h5 class="card-title">La agenda deportiva nacional se intensifica con amistosos, campeonatos y torneos escolares</h5>
+                        <p class="card-text">
+                            Distintas disciplinas concentran actividades durante las próximas semanas.
+                        </p>
+                        <a href="noticia-agenda-deportiva.html" class="btn btn-outline-dark btn-sm">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Más noticias -->
+        <section class="mt-5">
+            <div class="section-title mb-4">
+                <h3>Más noticias deportivas</h3>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm news-grid-card">
+                        <img src="Recursos/futbol-femenino.jpg" class="card-img-top" alt="Crecimiento del fútbol femenino en Chile">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-info text-dark mb-2">Fútbol femenino</span>
+                            <h5 class="card-title">El fútbol femenino sigue ganando espacio en torneos y formación deportiva</h5>
+                            <p class="card-text">
+                                Clubes y escuelas refuerzan programas para impulsar la participación y el alto rendimiento.
+                            </p>
+                            <a href="noticia-futbol-femenino.html" class="btn btn-outline-info btn-sm mt-auto">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm news-grid-card">
+                        <img src="Recursos/tenis-chileno.jpg" class="card-img-top" alt="Tenis chileno en competencias internacionales">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-secondary mb-2">Tenis</span>
+                            <h5 class="card-title">Tenistas chilenos buscan consolidarse en el circuito con nuevos desafíos internacionales</h5>
+                            <p class="card-text">
+                                El calendario competitivo abre opciones para sumar experiencia y mejorar posiciones.
+                            </p>
+                            <a href="noticia-tenis-chileno.html" class="btn btn-outline-secondary btn-sm mt-auto">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm news-grid-card">
+                        <img src="Recursos/baloncesto.jpg" class="card-img-top" alt="Desarrollo del baloncesto chileno">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-warning text-dark mb-2">Básquetbol</span>
+                            <h5 class="card-title">El básquetbol nacional apuesta por fortalecer series menores y competencias locales</h5>
+                            <p class="card-text">
+                                Dirigentes y entrenadores destacan la necesidad de continuidad en los procesos formativos.
+                            </p>
+                            <a href="noticia-baloncesto.html" class="btn btn-outline-warning btn-sm mt-auto">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm news-grid-card">
+                        <img src="Recursos/deporte-regional.jpg" class="card-img-top" alt="Deporte regional y participación comunitaria">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-danger mb-2">Regiones</span>
+                            <h5 class="card-title">Eventos regionales promueven actividad física y participación comunitaria</h5>
+                            <p class="card-text">
+                                Municipios y organizaciones impulsan encuentros abiertos para fomentar hábitos saludables.
+                            </p>
+                            <a href="noticia-deporte-regional.html" class="btn btn-outline-danger btn-sm mt-auto">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- Bloque especial -->
+        <section class="mt-5">
+            <div class="section-title mb-4">
+                <h3>Análisis y seguimiento</h3>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card shadow-sm h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <img src="Recursos/seleccion-juvenil.jpg" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="Selección juvenil chilena">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body d-flex flex-column h-100">
+                                    <span class="badge bg-success mb-2">Proyección</span>
+                                    <h5 class="card-title">Procesos juveniles concentran atención por su impacto en el recambio deportivo</h5>
+                                    <p class="card-text">
+                                        Especialistas plantean que el trabajo formativo será decisivo para sostener resultados.
+                                    </p>
+                                    <a href="noticia-seleccion-juvenil.html" class="btn btn-outline-success btn-sm mt-auto">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card shadow-sm h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5">
+                                <img src="Recursos/infraestructura-deportiva.jpg" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="Infraestructura deportiva en Chile">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body d-flex flex-column h-100">
+                                    <span class="badge bg-primary mb-2">Infraestructura</span>
+                                    <h5 class="card-title">Mejoras en infraestructura deportiva aparecen como desafío prioritario para comunas</h5>
+                                    <p class="card-text">
+                                        La disponibilidad de recintos adecuados sigue siendo clave para masificar la actividad física.
+                                    </p>
+                                    <a href="noticia-infraestructura-deportiva.html" class="btn btn-outline-primary btn-sm mt-auto">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 Periódico El Faro - Todos los derechos reservados</p>
+    <!-- Footer -->
+    <footer class="site-footer mt-5 py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5>El Faro</h5>
+                    <p>
+                        Diario digital orientado a informar sobre actualidad nacional, política, economía, tecnología,
+                        cultura, deportes y negocios, con una propuesta visual moderna y adaptable a distintos dispositivos.
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Secciones</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="politica.html">Política</a></li>
+                        <li><a href="economia.html">Economía</a></li>
+                        <li><a href="tecnologia.html">Tecnología</a></li>
+                        <li><a href="cultura.html">Cultura</a></li>
+                        <li><a href="deporte.html">Deporte</a></li>
+                        <li><a href="negocios.html">Negocios</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p class="mb-1">Email: contacto@elfaro.cl</p>
+                    <p class="mb-1">Teléfono: +56 9 1234 5678</p>
+                    <p class="mb-0">Santiago, Chile</p>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="text-center">
+                <p class="mb-0">&copy; 2026 Periódico El Faro - Todos los derechos reservados</p>
+            </div>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
