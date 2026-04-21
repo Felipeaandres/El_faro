@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Faro - Inicio</title>
     <link rel="icon" type="image/png" href="Recursos/Logo.png">
-    <!-- Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- CSS-->
     <link rel="stylesheet" href="Estilos.css">
 </head>
 <body>
 
-    <!-- Barra superior-->
     <div class="top-bar text-center py-2">
-        Última hora: Revisa noticias de política, economía, tecnología, cultura, deporte y negocios en El Faro.
+        Última hora: Revisa las noticias más importantes de economía, tecnología y deporte en El Faro.
     </div>
 
     <header class="site-header py-4">
@@ -28,13 +25,12 @@
                     </div>
                 </div>
                 <div class="mt-3 mt-md-0">
-                    <span class="badge bg-warning text-dark fs-6">Edición Digital 2026</span>
+                    <span class="badge bg-warning text-dark fs-6">Edición Digital</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Menú-->
     <nav class="navbar navbar-expand-lg navbar-dark main-nav sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">El Faro</a>
@@ -45,27 +41,21 @@
             <div class="collapse navbar-collapse" id="menuPrincipal">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="politica.html">Política</a></li>
                     <li class="nav-item"><a class="nav-link" href="economia.html">Economía</a></li>
                     <li class="nav-item"><a class="nav-link" href="tecnologia.html">Tecnología</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cultura.html">Cultura</a></li>
                     <li class="nav-item"><a class="nav-link" href="deporte.html">Deporte</a></li>
-                    <li class="nav-item"><a class="nav-link" href="negocios.html">Negocios</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Accesos rápidos -->
     <section class="quick-access py-3">
         <div class="container">
             <div class="d-flex flex-wrap gap-2 justify-content-center">
-                <a href="politica.html" class="btn btn-outline-light btn-sm">Política</a>
+                <a href="index.html" class="btn btn-outline-light btn-sm">Inicio</a>
                 <a href="economia.html" class="btn btn-outline-light btn-sm">Economía</a>
                 <a href="tecnologia.html" class="btn btn-outline-light btn-sm">Tecnología</a>
-                <a href="cultura.html" class="btn btn-outline-light btn-sm">Cultura</a>
                 <a href="deporte.html" class="btn btn-outline-light btn-sm">Deporte</a>
-                <a href="negocios.html" class="btn btn-outline-light btn-sm">Negocios</a>
             </div>
         </div>
     </section>
@@ -74,188 +64,177 @@
 
         <!-- Bloque principal -->
         <div class="row g-4">
-            <!--principal -->
             <div class="col-lg-8">
-                <div class="card border-0 shadow-lg main-news-card h-100">
+                <div class="card shadow-lg main-news-card h-100">
                     <img src="Recursos/combustibles.jpg" class="card-img-top" alt="Alza de combustibles en Chile">
                     <div class="card-body">
                         <span class="badge bg-danger mb-2">Noticia destacada</span>
-                        <h2 class="card-title">Fuerte alza en combustibles impacta a conductores y transporte en distintas regiones del país</h2>
-                        <p class="text-muted mb-2">Categoría: Economía</p>
-                        <p class="card-text">
-                            El incremento en los precios de las bencinas y del diésel ha generado preocupación
-                            entre automovilistas, transportistas y pequeñas empresas, especialmente en zonas
-                            donde la movilidad depende en gran medida del vehículo particular.
+
+                        <h2 class="card-title">
+                            Alza de combustibles continúa golpeando el presupuesto de hogares y pequeñas empresas
+                        </h2>
+
+                        <p class="news-meta mb-1">
+                            Publicado: 20 de abril de 2026 | Autor: Equipo El Faro
                         </p>
-                        <a href="noticia-combustibles.html" class="btn btn-warning fw-semibold">Leer más</a>
+
+                        <p class="fw-semibold">
+                            El aumento sostenido en los precios de los combustibles sigue generando un fuerte impacto en la economía doméstica y en los sectores productivos, especialmente en regiones donde el transporte es clave para la actividad diaria.
+                        </p>
+
+                        <p class="card-text">
+                            Durante las últimas semanas, el encarecimiento de las bencinas y del diésel ha obligado a las familias a reorganizar sus gastos, afectando directamente la movilidad cotidiana y el acceso a bienes y servicios. En muchos hogares, el costo del traslado ya representa una parte más relevante del presupuesto mensual.
+                        </p>
+
+                        <p class="card-text">
+                            El fenómeno no solo repercute en la vida diaria de las personas. Diversos sectores productivos han advertido que el alza impacta de manera directa en la logística, el transporte y la distribución de productos, incrementando costos operacionales y reduciendo márgenes en pequeñas y medianas empresas.
+                        </p>
+
+                        <p class="card-text">
+                            Especialistas señalan que este escenario genera un efecto en cadena que se refleja en el precio final de distintos bienes y servicios. De este modo, el impacto del combustible no se limita a las estaciones de servicio, sino que se extiende al comercio, la distribución y la planificación financiera de miles de familias.
+                        </p>
+
+                        <p class="card-text">
+                            En regiones, la situación es aún más compleja debido a la dependencia del transporte terrestre y a las mayores distancias entre centros urbanos. Esto hace que cualquier variación en los precios del combustible tenga una repercusión más visible y rápida sobre la economía local.
+                        </p>
+
+                        <p class="card-text">
+                            Mientras tanto, autoridades y analistas continúan observando el comportamiento del mercado energético, evaluando proyecciones y posibles medidas que permitan reducir la presión sobre la población. El tema sigue marcando la agenda económica y se mantiene como una de las principales preocupaciones para hogares y emprendedores.
+                        </p>
+
+                        <a href="economia.html#principal" class="btn btn-warning fw-semibold">Ir a Economía</a>
                     </div>
                 </div>
             </div>
 
-            <!--Secundarias -->
             <div class="col-lg-4">
                 <div class="card news-small-card shadow-sm mb-3">
-                    <img src="Recursos/violencia-escolar.jpg" class="card-img-top" alt="Comunidad educativa preocupada por violencia escolar">
+                    <img src="Recursos/startups.jpg" class="card-img-top" alt="Startups chilenas">
                     <div class="card-body">
-                        <span class="badge bg-primary mb-2">Actualidad</span>
-                        <h5 class="card-title">Comunidades educativas piden medidas urgentes ante nuevos episodios de violencia escolar</h5>
+                        <span class="badge bg-info text-dark mb-2">Tecnología</span>
+                        <h5 class="card-title">Startups chilenas amplían soluciones digitales para empresas y servicios</h5>
                         <p class="card-text">
-                            Docentes, apoderados y asistentes de la educación plantearon la necesidad de fortalecer
-                            la convivencia escolar y los equipos de apoyo psicosocial.
+                            Nuevos emprendimientos tecnológicos destacan por el desarrollo de automatización, atención en línea y comercio electrónico.
                         </p>
-                        <a href="noticia-violencia-escolar.html" class="btn btn-outline-primary btn-sm">Leer más</a>
+                        <a href="tecnologia.html#principal" class="btn btn-outline-info btn-sm">Ir a Tecnología</a>
                     </div>
                 </div>
 
                 <div class="card news-small-card shadow-sm mb-3">
-                    <img src="Recursos/honorarios.jpg" class="card-img-top" alt="Debate político sobre honorarios y asesores">
+                    <img src="Recursos/la-roja.jpg" class="card-img-top" alt="Selección chilena">
                     <div class="card-body">
-                        <span class="badge bg-success mb-2">Política</span>
-                        <h5 class="card-title">Debate político por honorarios y estructura de asesores vuelve al centro de la discusión</h5>
+                        <span class="badge bg-success mb-2">Deporte</span>
+                        <h5 class="card-title">La Roja deja señales positivas y reabre el debate sobre el recambio</h5>
                         <p class="card-text">
-                            Distintos sectores analizaron los criterios de contratación, transparencia y control
-                            asociados al trabajo de asesores en el ámbito público.
+                            El último amistoso internacional dejó una mejor imagen ofensiva y nuevas alternativas para el cuerpo técnico.
                         </p>
-                        <a href="noticia-honorarios.html" class="btn btn-outline-success btn-sm">Leer más</a>
+                        <a href="deporte.html#principal" class="btn btn-outline-success btn-sm">Ir a Deporte</a>
                     </div>
                 </div>
 
                 <div class="card news-small-card shadow-sm">
-                    <img src="Recursos/pymes.jpg" class="card-img-top" alt="Pymes chilenas y nuevos hábitos de consumo">
+                    <img src="Recursos/ia-publica.jpg" class="card-img-top" alt="Inteligencia artificial">
                     <div class="card-body">
-                        <span class="badge bg-dark mb-2">Negocios</span>
-                        <h5 class="card-title">Pymes chilenas ajustan estrategias ante consumidores cada vez más informados</h5>
+                        <span class="badge bg-dark mb-2">Tecnología</span>
+                        <h5 class="card-title">Instituciones evalúan el uso de inteligencia artificial en atención y gestión</h5>
                         <p class="card-text">
-                            Especialistas recomiendan reforzar canales digitales, experiencia del cliente y propuestas
-                            de valor más claras para competir en un mercado cambiante.
+                            Especialistas advierten que la IA puede mejorar tiempos de respuesta y acceso a información.
                         </p>
-                        <a href="noticia-pymes.html" class="btn btn-outline-dark btn-sm">Leer más</a>
+                        <a href="tecnologia.html#ia" class="btn btn-outline-dark btn-sm">Ver noticia</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Noticias -->
+        <!-- Más noticias -->
         <section class="mt-5">
             <div class="section-title mb-4">
                 <h3>Más noticias recientes</h3>
             </div>
 
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-4">
                     <div class="card h-100 shadow-sm news-grid-card">
-                        <img src="Recursos/startups.jpg" class="card-img-top" alt="Startups chilenas impulsan innovación digital">
+                        <img src="Recursos/consumo-hogares.jpg" class="card-img-top" alt="Economía hogares">
                         <div class="card-body d-flex flex-column">
-                            <span class="badge bg-info text-dark mb-2">Tecnología</span>
-                            <h5 class="card-title">Startups chilenas impulsan soluciones digitales para empresas y servicios</h5>
+                            <span class="badge bg-primary mb-2">Economía</span>
+                            <h5 class="card-title">Hogares reorganizan gastos ante el aumento del costo de vida</h5>
                             <p class="card-text">
-                                El ecosistema emprendedor continúa creciendo con propuestas ligadas a automatización,
-                                comercio electrónico y servicios en línea.
+                                La presión sobre servicios básicos, transporte y alimentación cambia las decisiones de compra y obliga a priorizar necesidades esenciales.
                             </p>
-                            <a href="noticia-startups.html" class="btn btn-outline-info btn-sm mt-auto">Leer más</a>
+                            <a href="economia.html#consumo" class="btn btn-outline-primary btn-sm mt-auto">Leer sección</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-4">
                     <div class="card h-100 shadow-sm news-grid-card">
-                        <img src="Recursos/festival-teatro.jpg" class="card-img-top" alt="Festival de teatro con compañías regionales">
+                        <img src="Recursos/ciberseguridad.jpg" class="card-img-top" alt="Ciberseguridad">
                         <div class="card-body d-flex flex-column">
-                            <span class="badge bg-secondary mb-2">Cultura</span>
-                            <h5 class="card-title">Festival de teatro reúne a compañías regionales en una amplia agenda cultural</h5>
+                            <span class="badge bg-danger mb-2">Tecnología</span>
+                            <h5 class="card-title">Ciberseguridad se consolida como prioridad para organizaciones</h5>
                             <p class="card-text">
-                                Diversas agrupaciones presentaron montajes con enfoque social, territorial y comunitario,
-                                fortaleciendo el acceso cultural.
+                                La protección de datos y la prevención de incidentes digitales adquieren una relevancia creciente en instituciones públicas y privadas.
                             </p>
-                            <a href="noticia-festival-teatro.html" class="btn btn-outline-secondary btn-sm mt-auto">Leer más</a>
+                            <a href="tecnologia.html#ciberseguridad" class="btn btn-outline-danger btn-sm mt-auto">Leer sección</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-4">
                     <div class="card h-100 shadow-sm news-grid-card">
-                        <img src="Recursos/la-roja.jpg" class="card-img-top" alt="Selección chilena en amistoso internacional">
+                        <img src="Recursos/clubes-chilenos.jpg" class="card-img-top" alt="Clubes chilenos">
                         <div class="card-body d-flex flex-column">
-                            <span class="badge bg-danger mb-2">Deporte</span>
-                            <h5 class="card-title">La Roja muestra señales positivas tras una nueva presentación amistosa</h5>
+                            <span class="badge bg-warning text-dark mb-2">Deporte</span>
+                            <h5 class="card-title">Clubes chilenos enfrentan una etapa decisiva entre torneo y copas</h5>
                             <p class="card-text">
-                                El combinado nacional dejó una mejor imagen en ofensiva y abre el debate
-                                sobre nombres y variantes para los próximos encuentros.
+                                La planificación deportiva, la profundidad del plantel y el calendario marcarán el rendimiento de las próximas semanas.
                             </p>
-                            <a href="noticia-la-roja.html" class="btn btn-outline-danger btn-sm mt-auto">Leer más</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 shadow-sm news-grid-card">
-                        <img src="Recursos/ia-publica.jpg" class="card-img-top" alt="Inteligencia artificial en servicios públicos">
-                        <div class="card-body d-flex flex-column">
-                            <span class="badge bg-warning text-dark mb-2">Tecnología</span>
-                            <h5 class="card-title">Instituciones exploran uso de inteligencia artificial para mejorar la atención</h5>
-                            <p class="card-text">
-                                Expertos señalan que la incorporación de herramientas digitales puede apoyar procesos,
-                                consultas y acceso a información.
-                            </p>
-                            <a href="noticia-ia-servicios-publicos.html" class="btn btn-outline-warning btn-sm mt-auto">Leer más</a>
+                            <a href="deporte.html#clubes" class="btn btn-outline-warning btn-sm mt-auto">Leer sección</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sección especial -->
+        <!-- Noticias destacadas por área -->
         <section class="mt-5">
             <div class="section-title mb-4">
-                <h3>Noticias destacadas por sección</h3>
+                <h3>Panorama nacional</h3>
             </div>
 
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="card shadow-sm h-100">
-                        <div class="row g-0 h-100">
-                            <div class="col-md-5">
-                                <img src="Recursos/modernizacion-estado.jpg" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="Modernización del Estado en Chile">
-                            </div>
-                            <div class="col-md-7">
-                                <div class="card-body d-flex flex-column h-100">
-                                    <span class="badge bg-success mb-2">Política</span>
-                                    <h5 class="card-title">Modernización del Estado vuelve a instalarse como eje del debate institucional</h5>
-                                    <p class="card-text">
-                                        La discusión sobre eficiencia, descentralización y fortalecimiento de servicios
-                                        públicos adquiere renovada relevancia.
-                                    </p>
-                                    <a href="noticia-modernizacion-estado.html" class="btn btn-outline-success btn-sm mt-auto">Leer más</a>
-                                </div>
-                            </div>
+                        <img src="Recursos/comercio-digital.jpg" class="card-img-top" alt="Transformación digital en empresas">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-info text-dark mb-2">Tecnología</span>
+                            <h5 class="card-title">Empresas aceleran procesos de digitalización para responder a nuevos mercados</h5>
+                            <p class="card-text">
+                                La adopción de plataformas digitales, automatización y canales de atención en línea se consolida como una necesidad estratégica para mejorar competitividad, eficiencia y cercanía con los usuarios.
+                            </p>
+                            <a href="tecnologia.html" class="btn btn-outline-info btn-sm mt-auto">Ver más</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6">
                     <div class="card shadow-sm h-100">
-                        <div class="row g-0 h-100">
-                            <div class="col-md-5">
-                                <img src="Recursos/museos.jpg" class="img-fluid rounded-start h-100 w-100 object-fit-cover" alt="Museos amplían actividades educativas">
-                            </div>
-                            <div class="col-md-7">
-                                <div class="card-body d-flex flex-column h-100">
-                                    <span class="badge bg-secondary mb-2">Cultura</span>
-                                    <h5 class="card-title">Museos amplían actividades educativas y acercan el patrimonio a escolares</h5>
-                                    <p class="card-text">
-                                        Nuevas iniciativas buscan fortalecer la participación de estudiantes y familias
-                                        en espacios culturales.
-                                    </p>
-                                    <a href="noticia-museos.html" class="btn btn-outline-secondary btn-sm mt-auto">Leer más</a>
-                                </div>
-                            </div>
+                        <img src="Recursos/infraestructura-deportiva.jpg" class="card-img-top" alt="Infraestructura deportiva">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-success mb-2">Deporte</span>
+                            <h5 class="card-title">Infraestructura deportiva se mantiene como desafío clave para masificar la actividad física</h5>
+                            <p class="card-text">
+                                Municipios, clubes y organizaciones destacan la necesidad de mejorar recintos y condiciones para fortalecer el acceso al deporte, especialmente en comunas y territorios con menos recursos.
+                            </p>
+                            <a href="deporte.html" class="btn btn-outline-success btn-sm mt-auto">Ver más</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- video -->
+        <!-- Multimedia -->
         <section class="mt-5">
             <div class="section-title mb-4">
                 <h3>Contenido multimedia</h3>
@@ -286,7 +265,6 @@
                                 Tu navegador no soporta audio.
                             </audio>
                             <p class="mt-3 mb-0">
-                                Espacio complementario para enriquecer la experiencia del usuario con contenido de apoyo en formato de audio.
                             </p>
                         </div>
                     </div>
@@ -296,43 +274,30 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer mt-5 py-5">
         <div class="container">
             <div class="row g-4">
                 <div class="col-md-4">
                     <h5>El Faro</h5>
                     <p>
-                        Diario digital orientado a informar sobre actualidad nacional, política, economía, tecnología,
-                        cultura, deportes y negocios, con una propuesta visual moderna y adaptable a distintos dispositivos.
+                        Diario digital orientado a informar sobre actualidad nacional con foco en economía, tecnología y deporte, mediante una propuesta visual moderna y adaptable.
                     </p>
                 </div>
-
                 <div class="col-md-4">
                     <h5>Secciones</h5>
                     <ul class="list-unstyled">
                         <li><a href="index.html">Inicio</a></li>
-                        <li><a href="politica.html">Política</a></li>
                         <li><a href="economia.html">Economía</a></li>
                         <li><a href="tecnologia.html">Tecnología</a></li>
-                        <li><a href="cultura.html">Cultura</a></li>
                         <li><a href="deporte.html">Deporte</a></li>
-                        <li><a href="negocios.html">Negocios</a></li>
                     </ul>
                 </div>
-
                 <div class="col-md-4">
                     <h5>Contacto</h5>
                     <p class="mb-1">Email: contacto@elfaro.cl</p>
                     <p class="mb-1">Teléfono: +56 9 1234 5678</p>
                     <p class="mb-0">Santiago, Chile</p>
                 </div>
-            </div>
-
-            <hr class="my-4">
-
-            <div class="text-center">
-                <p class="mb-0">&copy; 2026 Periódico El Faro - Todos los derechos reservados</p>
             </div>
         </div>
     </footer>

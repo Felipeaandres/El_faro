@@ -1,67 +1,248 @@
+:root {
+    --paper-bg: #f5f1e8;
+    --paper-white: #fffdf8;
+    --ink: #1d1d1b;
+    --muted: #666055;
+    --line: #d6cec0;
+    --headline: #111111;
+    --accent: #8b0000;
+    --accent-dark: #5f0000;
+    --nav-bg: #171717;
+    --topbar-bg: #ece6da;
+    --gold: #b08d57;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f9;
-    color: #212529;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: var(--paper-bg);
+    color: var(--ink);
+    line-height: 1.7;
 }
 
 .top-bar {
-    background-color: #c1121f;
-    color: white;
-    font-size: 0.95rem;
-    font-weight: 500;
+    background-color: var(--topbar-bg);
+    color: var(--headline);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-bottom: 1px solid var(--line);
 }
 
 .site-header {
-    background: linear-gradient(90deg, #0b1f3a, #16355c);
-    color: white;
+    background: linear-gradient(to bottom, #fdfbf6 0%, #f3ede2 100%);
+    color: var(--headline);
+    border-bottom: 4px double var(--line);
+}
+
+.site-header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    color: var(--headline);
+}
+
+.site-header p {
+    margin-bottom: 0;
+    color: var(--muted);
+    font-size: 1rem;
+    letter-spacing: 0.03em;
 }
 
 .logo-faro {
-    width: 85px;
-    height: 85px;
+    width: 84px;
+    height: 84px;
     object-fit: contain;
-    background-color: (0b1f3a);
-    border-radius: 40%;
+    background-color: var(--paper-white);
+    border: 1px solid var(--line);
+    border-radius: 50%;
     padding: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.main-nav {
-    background-color: #0d1b2a;
-}
-
-.quick-access {
-    background-color: #1b263b;
-}
-
-.main-news-card img {
-    max-height: 420px;
-    object-fit: cover;
-}
-
-.main-news-card .card-title {
+.badge {
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.04em;
     font-weight: 700;
 }
 
+.main-nav {
+    background-color: var(--nav-bg);
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.navbar-brand,
+.nav-link {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.95rem;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #f0d9a7 !important;
+}
+
+.quick-access {
+    background-color: #2a2a2a;
+    border-bottom: 1px solid #0d0d0d;
+}
+
+.quick-access .btn {
+    min-width: 110px;
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+main.container {
+    max-width: 1250px;
+}
+
+.main-news-card img,
+.news-small-card img,
+.news-grid-card img,
+.feature-card img {
+    object-fit: cover;
+    filter: saturate(0.92) contrast(1.03);
+}
+
+.main-news-card img {
+    max-height: 430px;
+}
+
+.news-small-card img {
+    height: 180px;
+}
+
+.news-grid-card img {
+    height: 170px;
+}
+
+.feature-card img {
+    height: 100%;
+    min-height: 220px;
+}
+
 .news-small-card,
-.news-grid-card {
-    border: none;
+.news-grid-card,
+.feature-card,
+.main-news-card,
+.card {
+    border: 1px solid var(--line);
+    border-radius: 0;
+    background-color: var(--paper-white);
+    box-shadow: none !important;
+}
+
+.card-body {
+    padding: 1.4rem;
+}
+
+.card:hover {
+    transform: none;
+}
+
+.main-news-card .card-title,
+.news-grid-card .card-title,
+.news-small-card .card-title,
+.card h4,
+.card h5 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--headline);
+}
+
+.main-news-card .card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.news-small-card .card-title,
+.news-grid-card .card-title {
+    font-size: 1.2rem;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+.card-text,
+.main-news-card p,
+.news-small-card p,
+.news-grid-card p {
+    color: #2c2a26;
+    font-size: 1rem;
+}
+
+.news-meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-style: italic;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 0.65rem;
+    margin-bottom: 1rem !important;
+}
+
+.section-title {
+    border-bottom: 3px double var(--line);
+    padding-bottom: 0.5rem;
 }
 
 .section-title h2,
 .section-title h3 {
+    font-family: Georgia, "Times New Roman", serif;
     font-weight: 700;
-    color: #0d1b2a;
-    border-left: 6px solid #f4a261;
-    padding-left: 10px;
+    color: var(--headline);
+    padding-left: 0;
+    margin-bottom: 0;
+    border-left: none;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.btn {
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.btn-warning {
+    background-color: var(--gold);
+    border-color: var(--gold);
+    color: #111;
+}
+
+.btn-warning:hover {
+    background-color: #9a7845;
+    border-color: #9a7845;
+    color: #111;
 }
 
 .site-footer {
-    background-color: #0d1b2a;
-    color: white;
+    background-color: #151515;
+    color: #f0ece3;
+    border-top: 4px double #3b3b3b;
+}
+
+.site-footer h5 {
+    font-family: Georgia, "Times New Roman", serif;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
 }
 
 .site-footer a {
-    color: #f8d56b;
+    color: #f0d9a7;
     text-decoration: none;
 }
 
@@ -69,17 +250,45 @@ body {
     text-decoration: underline;
 }
 
-.card {
-    border-radius: 12px;
+.main-news-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-small-card .card-img-top,
+.news-grid-card .card-img-top {
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {
     .logo-faro {
-        width: 70px;
-        height: 70px;
+        width: 68px;
+        height: 68px;
     }
 
     .site-header h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
+    }
+
+    .site-header p {
+        font-size: 0.9rem;
+    }
+
+    .quick-access .btn {
+        min-width: auto;
+    }
+
+    .main-news-card img {
+        max-height: 300px;
+    }
+
+    .news-small-card img,
+    .news-grid-card img {
+        height: 180px;
+    }
+
+    .main-news-card .card-title {
+        font-size: 1.5rem;
     }
 }
